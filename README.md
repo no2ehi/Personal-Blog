@@ -1,4 +1,4 @@
-# PersonalBlog
+# Personal Blog
 
 Practice With Angular 6 & Angular Material  
 
