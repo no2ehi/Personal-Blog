@@ -1,0 +1,27 @@
+
+.header-background{
+    min-height: 19vh;
+    background-color: #e91e63;
+}
+
+mat-card{
+    height: 110px;
+    border-radius: 90px;
+    direction: rtl;
+    margin-bottom: -4%;
+    padding: 0 !important;
+
+    .myPic img{
+        width: 110px;
+        height: 110px;
+        border-radius: 90px;
+    }
+    .mat-icon-button{
+        line-height: 0; 
+    }
+}
+
+
+
+
+
