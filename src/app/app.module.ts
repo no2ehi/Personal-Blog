@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Added Modules
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MaterialModule } from './material/material.module';
+
+// Added Component
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './content/post/post.component';
 import { MorePostComponent } from './content/more-post/more-post.component';

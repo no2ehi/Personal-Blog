@@ -1,0 +1,17 @@
+
+
+.navbar{
+    direction: rtl;
+    
+    a{
+        font-size: 0.8em;
+        color:white;
+    }
+    a:visited{
+        color: white;
+    }
+
+    position: relative;
+    z-index: 999;  
+
+}

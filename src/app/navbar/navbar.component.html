@@ -1,3 +1,12 @@
-<p>
-  navbar works!
-</p>
+<mat-toolbar fxLayout="row" fxLayoutAlign="start center" [class.mat-elevation-z2]="true" class="navbar" color="primary">
+  <span fxHide="true" fxHide.gt-xs="false">
+    <a mat-button routerlink="/">خانه</a>
+    <a mat-button>نمونه کار</a>
+    <a mat-button>درباره من</a>
+    <a mat-button>دریافت تم</a>
+    <a mat-button>ورود</a>
+  </span>
+  <span fxHide="false" fxHide.gt-xs="true">
+    <a mat-button>خانه</a>
+  </span>
+</mat-toolbar>

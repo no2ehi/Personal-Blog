@@ -1,3 +1,126 @@
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/material-icon.woff2') format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
 
+  @font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/fonts/eot/iranyekanwebbold.eot');
+    src: url('assets/fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('assets/fonts/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('assets/fonts/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('assets/fonts/ttf/iranyekanwebbold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/eot/iranyekanweblight.eot');
+    src: url('assets/fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('assets/fonts/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('assets/fonts/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('assets/fonts/ttf/iranyekanweblight.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/eot/iranyekanwebregular.eot');
+    src: url('assets/fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('assets/fonts/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('assets/fonts/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('assets/fonts/ttf/iranyekanwebregular.ttf') format('truetype');
+  }
+  
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+margin: 0;
+background-color: #fafafa;
+height: 100%;
+font-size: 14px;
+}
+
+span, p, h1, h2, h3, h4, h5, h6, a, mat-toolbar, mat-card-title,
+mat-list-item, .mat-header-cell, .mat-cell, mat-error, mat-hint,
+.mat-input-element, mat-button-toggle {
+    font-family: iranyekan , sans-serif,Arial !important;
+}
+
+
+.mat-input-element {
+	height: 18px;
+}
+
+.mat-header-cell {
+	direction: rtl;
+	text-align: right !important;
+}
+
+mat-select {
+	line-height: 19px;
+}
+
+.text-ultralight {
+	font-weight: 200;
+}
+.text-light {
+	font-weight: 300;
+}
+.text-regular {
+	font-weight: normal;
+}
+.text-medium {
+	font-weight: 500;
+}
+.text-bold {
+	font-weight: bold;
+}
+
+.mat-input-suffix {
+	position: relative;
+	font-size: .95em;
+	bottom: -4.5px;
+	left: 5px;
+	cursor: pointer;
+}
+
+
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$ruhollah-pimary: mat-palette($mat-pink,600);
+$ruhollah-accent: mat-palette($mat-light-blue);
+$ruhollah-warn: mat-palette($mat-red);
+
+$ruhollah-theme: mat-light-theme(
+	$ruhollah-pimary,
+	$ruhollah-accent,
+	$ruhollah-warn
+);
+
+@include angular-material-theme($ruhollah-theme);
