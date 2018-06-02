@@ -1,0 +1,44 @@
+
+  .my-container{
+    position: relative;
+    width: 50%;
+    margin-top:7%;
+    right:25%;
+    left: 25%;
+    margin-bottom: 60px;
+    background-color: aquamarine;
+    direction: rtl;
+
+    .my-card h2{
+        font-size: 0.9em;
+    }
+
+    .my-card a{
+        color: #282828;
+      }
+
+      .mat-card-subtitle{
+        font-family: iranyekan , sans-serif,Arial !important;
+        font-size: .77em;
+      }
+
+      .header-card-image {
+        background-image: url('../../../assets/images/myPic.png');
+        background-size: cover;
+      }
+
+      .mat-card-content{
+          line-height: 2.3em;
+          text-align:justify;
+      }
+      
+      .go-to-more{
+        margin-bottom: -6.7%;
+      }
+
+      .go-to-more a{
+          color: white;
+      }
+  }
+
+  
